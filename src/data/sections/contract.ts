@@ -1,4 +1,5 @@
 import type { LegalSection } from '../../types/legal'
+import { assetPath } from '../assets'
 import { law } from '../laws'
 
 export const contractSection: LegalSection = {
@@ -9,8 +10,7 @@ export const contractSection: LegalSection = {
   label: 'Раздел 3',
   lead:
     'Что брачный договор реально регулирует, какие условия в нем работают и когда его можно изменить или оспорить.',
-  image:
-    'https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200&q=80',
+  image: assetPath('/images/contract-overview.jpg'),
   subsections: [
     {
       id: 'contract-concept',
@@ -19,8 +19,7 @@ export const contractSection: LegalSection = {
       title: 'Понятие и заключение брачного договора',
       shortTitle: 'Понятие',
       kicker: 'Зачем он нужен',
-      heroImage:
-        'https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&fit=crop&w=1200&q=80',
+      heroImage: assetPath('/images/contract-concept.jpg'),
       lead:
         'Брачный договор - это не про недоверие, а про заранее понятные имущественные правила.',
       userNeed:
@@ -52,8 +51,7 @@ export const contractSection: LegalSection = {
       title: 'Что можно и нельзя включать',
       shortTitle: 'Содержание',
       kicker: 'Границы условий',
-      heroImage:
-        'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1200&q=80',
+      heroImage: assetPath('/images/legal-documents.jpg'),
       lead:
         'Хороший брачный договор точен: он говорит об имуществе, а не пытается управлять личной жизнью.',
       userNeed:
@@ -85,8 +83,7 @@ export const contractSection: LegalSection = {
       title: 'Изменение, расторжение и недействительность',
       shortTitle: 'Изменение',
       kicker: 'Когда договор спорный',
-      heroImage:
-        'https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&w=1200&q=80',
+      heroImage: assetPath('/images/contract-change.jpg'),
       lead:
         'Брачный договор можно менять, расторгать и оспаривать, но для этого нужны правовые основания, а не просто сожаление о подписании.',
       userNeed:
