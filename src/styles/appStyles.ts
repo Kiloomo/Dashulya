@@ -169,6 +169,33 @@ export const appStyles = css`
     gap: 8px;
   }
 
+  .menu-button {
+    display: none;
+    width: 42px;
+    height: 42px;
+    cursor: pointer;
+    place-items: center;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--surface);
+    color: var(--accent-strong);
+    transition:
+      background 180ms ease,
+      border-color 180ms ease,
+      box-shadow 180ms ease,
+      transform 180ms ease;
+  }
+
+  .menu-button:hover {
+    border-color: #b88b74;
+    box-shadow: 0 10px 24px rgba(70, 51, 33, 0.12);
+    transform: translateY(-1px);
+  }
+
+  .menu-button:active {
+    transform: translateY(0) scale(0.97);
+  }
+
   .nav a {
     position: relative;
     overflow: hidden;
@@ -762,6 +789,7 @@ export const appStyles = css`
   .primary-link:focus-visible,
   .secondary-link:focus-visible,
   .nav a:focus-visible,
+  .menu-button:focus-visible,
   .icon-button:focus-visible,
   .topic-card:focus-visible,
   .subsection-card:focus-visible {
@@ -859,13 +887,50 @@ export const appStyles = css`
 
   @media (max-width: 880px) {
     .topbar {
-      position: static;
-      align-items: flex-start;
-      flex-direction: column;
+      align-items: center;
+      flex-direction: row;
+      flex-wrap: wrap;
     }
 
     .nav {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 100%;
+      gap: 0;
+      max-height: 0;
+      overflow: hidden;
+      border: 1px solid transparent;
+      border-radius: 8px;
+      opacity: 0;
+      transform: translateY(-6px);
+      transition:
+        border-color 200ms ease,
+        max-height 220ms ease,
+        opacity 180ms ease,
+        padding 200ms ease,
+        transform 200ms ease;
+    }
+
+    .nav a {
+      width: 100%;
+      min-height: 44px;
       justify-content: flex-start;
+    }
+
+    .nav-open {
+      gap: 8px;
+      max-height: 340px;
+      border-color: var(--line);
+      padding: 10px;
+      background: rgba(255, 253, 248, 0.96);
+      opacity: 1;
+      transform: translateY(0);
+      box-shadow: 0 16px 36px rgba(70, 51, 33, 0.12);
+    }
+
+    .menu-button {
+      display: inline-grid;
+      margin-left: auto;
     }
 
     .hero-section,
