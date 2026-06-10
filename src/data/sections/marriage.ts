@@ -1,5 +1,4 @@
 import type { LegalSection } from '../../types/legal'
-import { assetPath } from '../assets'
 import { law } from '../laws'
 
 export const marriageSection: LegalSection = {
@@ -10,7 +9,8 @@ export const marriageSection: LegalSection = {
   label: 'Раздел 1',
   lead:
     'Как понять, можно ли зарегистрировать брак, что происходит в ЗАГС и когда брак могут признать недействительным.',
-  image: assetPath('/images/marriage-overview.jpg'),
+  image:
+    'https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1200&q=80',
   subsections: [
     {
       id: 'marriage-conditions',
@@ -19,7 +19,8 @@ export const marriageSection: LegalSection = {
       title: 'Условия заключения брака',
       shortTitle: 'Условия',
       kicker: 'Перед заявлением',
-      heroImage: assetPath('/images/marriage-conditions.jpg'),
+      heroImage:
+        'https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1200&q=80',
       lead:
         'Перед походом в ЗАГС важно проверить не романтическую часть, а юридическую: согласие, возраст и отсутствие препятствий.',
       userNeed:
@@ -51,7 +52,8 @@ export const marriageSection: LegalSection = {
       title: 'Регистрация брака в ЗАГС',
       shortTitle: 'Регистрация',
       kicker: 'Процедура',
-      heroImage: assetPath('/images/marriage-registration.jpg'),
+      heroImage:
+        'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1200&q=80',
       lead:
         'Регистрация - это момент, после которого отношения получают статус брака с юридическими последствиями.',
       userNeed:
@@ -84,7 +86,8 @@ export const marriageSection: LegalSection = {
       title: 'Недействительность брака',
       shortTitle: 'Недействительность',
       kicker: 'Если условия нарушены',
-      heroImage: assetPath('/images/legal-documents.jpg'),
+      heroImage:
+        'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1200&q=80',
       lead:
         'Недействительность - это не обычный развод, а признание судом, что брак был заключен с юридическим дефектом.',
       userNeed:

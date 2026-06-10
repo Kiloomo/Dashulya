@@ -1,5 +1,4 @@
 import type { LegalSection } from '../../types/legal'
-import { assetPath } from '../assets'
 import { law } from '../laws'
 
 export const divorceSection: LegalSection = {
@@ -10,7 +9,8 @@ export const divorceSection: LegalSection = {
   label: 'Раздел 2',
   lead:
     'Как выбрать между ЗАГС и судом, что делать при споре и какие вопросы не исчезают после развода.',
-  image: assetPath('/images/divorce-overview.jpg'),
+  image:
+    'https://images.unsplash.com/photo-1457694587812-e8bf29a43845?auto=format&fit=crop&w=1200&q=80',
   subsections: [
     {
       id: 'divorce-grounds',
@@ -19,7 +19,8 @@ export const divorceSection: LegalSection = {
       title: 'Основания и способы расторжения брака',
       shortTitle: 'Основания',
       kicker: 'Первый выбор',
-      heroImage: assetPath('/images/divorce-grounds.jpg'),
+      heroImage:
+        'https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=80',
       lead:
         'Главный практический вопрос: ваш развод идет через ЗАГС или через суд. Ответ зависит от детей, согласия и специальных обстоятельств.',
       userNeed:
@@ -51,7 +52,8 @@ export const divorceSection: LegalSection = {
       title: 'Судебный порядок развода',
       shortTitle: 'Суд',
       kicker: 'Когда без суда никак',
-      heroImage: assetPath('/images/divorce-court.jpg'),
+      heroImage:
+        'https://images.unsplash.com/photo-1589578527966-fdac0f44566c?auto=format&fit=crop&w=1200&q=80',
       lead:
         'Судебный развод - это не всегда конфликтная битва, но это формальная процедура, где важно правильно определить требования и подсудность.',
       userNeed:
@@ -80,7 +82,8 @@ export const divorceSection: LegalSection = {
       title: 'Последствия расторжения брака',
       shortTitle: 'Последствия',
       kicker: 'После решения',
-      heroImage: assetPath('/images/divorce-consequences.jpg'),
+      heroImage:
+        'https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1200&q=80',
       lead:
         'Развод прекращает брачные отношения, но не закрывает автоматически вопросы имущества, детей и алиментов.',
       userNeed:
