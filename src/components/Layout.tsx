@@ -12,7 +12,7 @@ export function Layout({ sections }: LayoutProps) {
       <header className="topbar">
         <Link className="brand" to="/">
           <span className="brand-mark" aria-hidden="true">
-            <img src="/favicon.svg" alt="" />
+            <img src={`${import.meta.env.BASE_URL}favicon.svg`} alt="" />
           </span>
           <span>Семейное право РФ</span>
         </Link>
